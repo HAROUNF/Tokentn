@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Coming Soon</title>
+  <link rel="website icon" type="png" href="logo1.png">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* =====  SETUP  ===== */
+    html,body{height:100%;margin:0;background:#0d1117;color:#e6edf3;font-family:'Exo 2',sans-serif;display:grid;place-items:center;text-align:center;overflow:hidden;}
+
+    /* =====  NEON GRADIENT TEXT  ===== */
+    h1{
+      font-size:clamp(2rem, 8vw, 4rem);
+      letter-spacing:4px;
+      background:linear-gradient(90deg,#22d3ee,#a78bfa);
+      -webkit-background-clip:text;
+      background-clip:text;
+      -webkit-text-fill-color:transparent;
+      animation:pulse 2s ease-in-out infinite, slideIn 1s ease-out;
+    }
+    p{font-size:1.2rem;opacity:.8;margin-top:.5em;animation:fade 1s 1s both;}
+
+    /* =====  KEYFRAMES  ===== */
+    @keyframes pulse{
+      0%,100%{text-shadow:0 0 10px #22d3ee,0 0 20px #22d3ee,0 0 30px #a78bfa;}
+      50%{text-shadow:0 0 20px #22d3ee,0 0 30px #22d3ee,0 0 40px #a78bfa;}
+    }
+    @keyframes slideIn{
+      from{transform:translateY(-80px);opacity:0;}
+      to{transform:translateY(0);opacity:1;}
+    }
+    @keyframes fade{
+      from{opacity:0;}
+      to{opacity:.8;}
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Coming Soon</h1>
+    <p>We're working hard to launch this page.</p>
+  </div>
+  <a href="index.html" class="back-btn">← Retour</a>
+</body>
+</html>

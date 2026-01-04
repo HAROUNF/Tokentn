@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Mobile Legends Diamonds – Token_Tn</title>
+    <link rel="website icon" type="png" href="logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script src="token.js"></script>
+    <script src="cart.js"></script>
+</head>
+<body>
+<header class="top">
+    <a href="index.html"><div class="logo"><img src="logo.png" alt="Token_Tn" id="i" style="border-radius: 50%;
+  aspect-ratio: 1 / 1;   /* keeps it round even if the source file isn't square */
+  object-fit: cover;"></div></a>
+    <h1 style="scroll-margin-left: 100px;">Token_Tn – Coins & Codes</h1>
+    <div class="social">
+        <a  href="https://www.tiktok.com/@gamezone.on" target="_blank"><img src="tiktok.jpg" id="l" ></a>
+        <a  href="https://www.instagram.com/token_tn?igsh=MXR3cWlxbjFraTZzNQ==" target="_blank"><img src="insta.jpg" id="m" ></a>
+    </div>
+    <div class="cart-icon" onclick="openCart()">
+        <span id="cartCount">0</span>
+      🛒
+    </div>
+</header>
+
+<main class="category-page">
+    <h2>Sélectionnez le pack</h2>
+    <div class="list" id="product-list">
+        <!-- JS will inject cards here -->
+    </div>
+</main>
+
+<script src="../js/app.js"></script>
+<script>
+    // category data – change per file
+    const category = 'mobilelegends';
+    const products = [
+        {id:1, name:'11 diamonds', price:1.000, img:'mldiamond.jpg'},
+        {id:2, name:'55 Diamonds', price:3.700, img:'mldiamond.jpg'},
+        {id:3, name:'86 Diamonds', price:5.000, img:'mldiamond.jpg'},
+        {id:4, name:'172 Diamonds', price:11.000, img:'mldiamond.jpg'},
+        {id:5, name:'257 diamonds', price:16.000, img:'mldiamond.jpg'},
+        {id:6, name:'275 Diamonds', price:18.000, img:'mldiamond.jpg'},
+        {id:7, name:'706 Diamonds', price:45.000, img:'mldiamond.jpg'},
+        {id:8, name:'1155 diamonds', price:75.000, img:'mldiamond.jpg'},
+        {id:9, name:'1765 Diamonds', price:110.000, img:'mldiamond.jpg'},
+        {id:10, name:'2195 Diamonds', price:130.000, img:'mldiamond.jpg'},
+        {id:11, name:'2975 Diamonds', price:190.000, img:'mldiamond.jpg'},
+        {id:12, name:'3688 Diamonds', price:220.000, img:'mldiamond.jpg'},
+        {id:13, name:'5532 Diamonds', price:320.000, img:'mldiamond.jpg'},
+        {id:14, name:'6000 Diamonds', price:350.000, img:'mldiamond.jpg'},
+         {id:15, name:'9288 Diamonds', price:500.000, img:'mldiamond.jpg'},
+    ];
+    renderCategory(products);
+</script>
+</body>
+</html>
